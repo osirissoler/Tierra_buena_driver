@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Tierra Buena Drivers",
+    "slug": "Tierra-Buena-Drivers",
+    "version": "0.0.6",
+    "orientation": "portrait",
+    "icon": "./assets/images/buena.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/buena.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tierra-buena-drivers.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you change your profile image.",
+        "NSCameraUsageDescription": "The app uses your camera to let you take a picture and set it as your profile image.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "facilito"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/buena.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tierra-buena-drivers.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/buena.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you change your profile image.",
+          "cameraPermission": "The app uses your camera to let you take a picture and set it as your profile image."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "57701ad2-f335-4cfa-87ec-917b69f41db3"
+      }
+    }
+  }
+}
