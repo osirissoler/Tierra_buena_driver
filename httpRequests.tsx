@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const baseUrl = //'http://localhost:0003/api'
- 'https://facilito-detailed-sales-iorbo.ondigitalocean.app/api';
+ 'https://coopharma-api-zd5is.ondigitalocean.app/api';
 
 
 const fetchData = async (url: string) => {

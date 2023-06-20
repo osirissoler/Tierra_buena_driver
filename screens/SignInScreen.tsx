@@ -76,9 +76,10 @@ export default function SignInScreen({ navigation }: any) {
 
 	const login = (values: { email: string; password: string }) => {
 		const url = '/auth/loginDriver';
+		console.log(values)
 		sendData(url, values)
 			.then((response: any) => {
-				if (Object.keys(response).length > 0) {
+				if (response.ok) {
 					const driver = response['user'];
 					const data = {
 						driver_id: driver.id,
@@ -88,12 +89,15 @@ export default function SignInScreen({ navigation }: any) {
 					};
 					asyncStorage.setItem('USER_LOGGED', JSON.stringify(data));
 					navigateToHome();
-				} else showErrorToast('Wrong credentials');
+				} else {
+					showErrorToast(response.message)
+					console.log(response.message)
+				};
 			})
-			.catch((error) => {
-				showErrorToast('Error connecting with server, please try again later.');
-				console.log(error);
-			});
+			// .catch((error) => {
+			// 	showErrorToast('Error connecting with server, please try again later.');
+			// 	console.log(error);
+			// });
 	};
 
 	const showErrorToast = (message: string) => {

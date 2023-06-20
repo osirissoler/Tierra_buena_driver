@@ -118,6 +118,20 @@ export default function ProfileScreen({ navigation }: any) {
 		});
 	};
 
+	const deleteUser = ()=>{
+		const url = `/user/enableDesible/${user.id}`;
+
+		sendData(url, {}).then((response: any) => {
+			if (response.ok) {
+				logout();
+				// const user = response['driver'];
+				// if (user.img) setProfileImage({ uri: user.img });
+				// setUser(user);
+			}
+		});
+		
+	}
+
 	return (
 		<ScreenContainer>
 			<Loading showLoading={showLoading} />
@@ -159,15 +173,33 @@ export default function ProfileScreen({ navigation }: any) {
 						<Text style={styles.optionText}>Vehicle License</Text>
 						<AntDesign style={styles.optionIcon} name='right' size={16} />
 					</Pressable>
+					*/}
 					<Pressable
 						style={styles.option}
 						onPress={() => {
-							console.log('hey');
+							
+								console.log('delete')
+								Alert.alert(
+									'Warning',
+									'Do you want to delete your account?',
+									[
+										{
+											text: 'Yes',
+											onPress: () => {
+												deleteUser()
+											}
+										},
+										{
+											text: 'No'
+										}
+									]
+								)
+							
 						}}
 					>
-						<Text style={styles.optionText}>Criminal Record</Text>
-						<AntDesign style={styles.optionIcon} name='right' size={16} />
-					</Pressable> */}
+						<Text style={styles.optionText}>Request to delete my account</Text>
+						<AntDesign style={styles.optionIcon} name='delete' size={16} color='red' />
+					</Pressable> 
 					<Pressable
 						style={styles.option}
 						onPress={() => {
@@ -229,7 +261,7 @@ const styles = StyleSheet.create({
 		fontSize: 16
 	},
 	optionIcon: {
-		color: 'rgba(0, 0, 0, 0.3)'
+		// color: 'rgba(0, 0, 0, 0.3)'
 	},
 	footer: {
 		marginTop: 30,
