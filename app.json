@@ -2,7 +2,7 @@
   "expo": {
     "name": "Tierra Buena Drivers",
     "slug": "Tierra-Buena-Drivers",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/buena.png",
     "scheme": "myapp",
@@ -21,7 +21,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.tierra-buena-drivers.app",
-      "buildNumber": "2",
+      "buildNumber": "1",
       "infoPlist": {
         "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you change your profile image.",
         "NSCameraUsageDescription": "The app uses your camera to let you take a picture and set it as your profile image.",
