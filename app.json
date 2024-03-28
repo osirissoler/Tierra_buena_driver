@@ -8,12 +8,13 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/TierraBuenaDriver.png",
+      "image": "./assets/images/buena2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/57701ad2-f335-4cfa-87ec-917b69f41db3"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -35,7 +36,7 @@
         "foregroundImage": "./assets/images/buena.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.tierra-buena-drivers.app",
+      "package": "com.tierraBuenaDrivers.app",
       "versionCode": 14,
       "permissions": [
         "android.permission.CAMERA",
@@ -60,6 +61,9 @@
       "eas": {
         "projectId": "57701ad2-f335-4cfa-87ec-917b69f41db3"
       }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }

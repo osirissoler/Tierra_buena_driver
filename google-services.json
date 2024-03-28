@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:753712778521:android:b1102275233a8d1c8ac988",
         "android_client_info": {
-          "package_name": "com.tierra-buena-drivers.app"
+          "package_name": "com.tierraBuenaDrivers.app"
         }
       },
       "oauth_client": [
@@ -34,7 +34,7 @@
               "client_id": "753712778521-boffh5i855aaomm4vjugdv8kjj0dl4um.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.tierra-buena-drivers.app"
+                "bundle_id": "com.ttierraBuenaDrivers.app"
               }
             }
           ]
