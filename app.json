@@ -4,11 +4,11 @@
     "slug": "Tierra-Buena-Drivers",
     "version": "0.0.2",
     "orientation": "portrait",
-    "icon": "./assets/images/buena.png",
+    "icon": "./assets/images/TierraBuenaDriver.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/buena.png",
+      "image": "./assets/images/TierraBuenaDriver.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,7 +21,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.tierra-buena-drivers.app",
-      "buildNumber": "1",
+      "buildNumber": "2",
       "infoPlist": {
         "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you change your profile image.",
         "NSCameraUsageDescription": "The app uses your camera to let you take a picture and set it as your profile image.",
@@ -30,17 +30,22 @@
       }
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/buena.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.tierra-buena-drivers.app",
+      "versionCode": 14,
       "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
-      "favicon": "./assets/images/buena.png"
+      "favicon": "./assets/images/TierraBuenaDriver.png"
     },
     "plugins": [
       [
